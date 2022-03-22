@@ -1,0 +1,74 @@
+<html>
+<head>
+<title>CodeWarCH1</title>
+</head>
+<body>
+<div class='block'>
+
+<input id='place'></input>
+
+<h3 >Here High-Ordered Number</h3>
+
+<button id='btn' onclick='orders()'>make it ordered</button>
+</div>
+<h1>
+You can type any number and tap button to make it higher number!
+</h1>
+</body>
+<style>
+
+body{
+
+background: #fff;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+.block{
+background: yellow;
+border-radius: ;
+border: solid 2px ;
+display:flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+width: 400px;
+height: 148px;
+} 
+#place{
+margin-top; 10px;
+width: ;
+color: red;
+border: solid 1px;
+
+}
+h3{
+font-family: monospace;
+color: black;
+}
+h1{
+font-family: monospace;
+}
+button{
+width: 100%;
+padding: 12px;
+background-color: blue;
+color: white;
+}
+
+</style>
+<script>
+
+//script for file 
+
+function orders(){
+
+let nums = document.getElementById('place').value;
+let dump = parseInt(String(nums).split('').sort().reverse().join(''))
+let chng = document.querySelector('h3').innerHTML = dump;
+
+}
+
+</script>
+</html>
